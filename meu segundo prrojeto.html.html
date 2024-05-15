@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicMania</title>
+    <style>
+
+
+        /* Estilos para um visual mais vintage e "rock 'n' roll" */
+        body {
+
+            
+            font-family: 'Arial Black', sans-serif;
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #ffcc00;
+            margin-top: 0;
+        }
+        p {
+            color: #faf2f2;
+        }
+        ul, ol {
+            list-style: none;
+            padding: 0;
+        }
+        ul li, ol li {
+            margin-bottom: 10px;
+        }
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+        .button {
+            padding: 10px 20px;
+            border: 2px solid #706e68;
+            border-radius: 5px;
+            background-color: transparent;
+            color: #919089;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .button:hover {
+            background-color: #faf9f1;
+            color: #000;
+            transform: scale(1.05);
+        }
+        .section {
+            display: none;
+            padding: 40px;
+            margin-top: 20px;
+            border-radius: 10px;
+            background-color: #333;
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px 0;
+            background-color: #000;
+        }
+        a {
+            color: #75746f;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #706f6c;
+            border-radius: 5px;
+            background-color: #333;
+            color: #fff;
+            font-size: 16px;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #faf8f2;
+            color: #000;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        input[type="submit"]:hover {
+            background-color: #68b1de;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <body background="imagens/th (3).jpeg">
+
+        
+<div class="container">
+    <h1>Bem-vindo à Music Mania!</h1>
+    <h2>Sobre nós:</h2>
+    <p>Music Mania é o seu destino online para descobrir novas músicas, explorar bandas favoritas e criar playlists personalizadas.</p>
+
+    <div class="button-container"><left>
+        <button class="button" onclick="showContent('playlists')">Playlists em Destaque</button>
+        <button class="button" onclick="showContent('favorite-bands')">Bandas Favoritas</button>
+        <button class="button" onclick="showContent('top-songs')">Top 10 Músicas</button>
+        <button class="button" onclick="showContent('history')">História da Música</button>
+        
+    </div>
+   
+
+
+    <div id="playlists" class="section">
+        <h2>Nossas playlists em destaque:</h2>
+        <ul>
+            <li><a href="https://www.deezer.com/br/playlist/9585263902">playlist dos Beatles</a></li>
+            <li><a href="https://www.deezer.com/br/artist/848">playlist do Led Zeppelin</a></li>
+            <li><a href="https://www.deezer.com/br/artist/11/">playlist dos Rolling Stones</a></li>
+            <li><a href="https://www.deezer.com/br/artist/163/">playlist do U2</a></li>
+            <li><a href="https://www.deezer.com/br/artist/192/">playlist do Eric Clapton</a></li>
+            <li><a href="https://www.deezer.com/br/artist/176/">playlist do Dire Straits</a></li>
+        </ul>
+    </div>
+
+    <div id="favorite-bands" class="section">
+        
+        <input type="text" id="bandInput" placeholder="Digite o nome da banda">
+        <input type="submit" value="Adicionar Banda" onclick="addBand()">
+        <ol id="favoriteBandsList">
+            <!-- Lista de bandas favoritas será exibida aqui -->
+        </ol>
+    </div>
+
+    <div id="top-songs" class="section">
+        <h2>Top 10 melhores músicas do momento:</h2>
+        <ul>
+            <li>Guns in Roses-November Rain</li>
+            <!-- Adicione mais músicas aqui -->
+        </ul>
+    </div>
+
+    <div id="history" class="section">
+        <h2>História da Música</h2>
+        <p>Confira a história da música e descubra como o rock influenciou a cultura ao longo dos anos.</p>
+        <a href="https://www.historiadampb.com.br/rock-brasil">História do Rock Nacional</a>
+    </div>
+
+    <div id="contact" class="section">
+        <h2>Entre em Contato</h2>
+        <p>Se você tiver alguma dúvida ou sugestão, não hesite em nos contatar.</p>
+        <p>Email: contato@musicmania.com</p>
+    </div>
+</div>
+<section>
+    <ul>
+        <small>
+        <li>década de 60</li>
+        <li>década de 70</li>
+        <li>década de 80</li>
+        <li>década de 90</li>
+        <li>década de 200</li>
+        </small>
+    </ul>
+</section>
+
+<footer>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    &copy; projeto trabalho HTML.
+</footer>
+
+<script>
+    function showContent(id) {
+        // Esconder todos os elementos com classe 'section'
+        var sections = document.querySelectorAll('.section');
+        sections.forEach(function(section) {
+            section.style.display = 'none';
+        });
+
+        // Mostrar o elemento com o ID correspondente
+        var element = document.getElementById(id);
+        if (element) {
+            element.style.display = 'block';
+        }
+    }
+
+    function addBand() {
+        var bandInput = document.getElementById('bandInput');
+        var bandName = bandInput.value.trim();
+        if (bandName !== '') {
+            var favoriteBandsList = document.getElementById('favoriteBandsList');
+            var li = document.createElement('li');
+            li.textContent = bandName;
+            favoriteBandsList.appendChild(li);
+            bandInput.value = '';
+        }
+    }
+</script>
+
+</body>
+</html>
