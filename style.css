@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e1e;
+    color: #4a4141;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url("https://cdn.wallpapersafari.com/99/35/hRA8UG.jpg");
+    height: 200px;
+    width: 100%;
+    
+}
+
+header {
+    background: linear-gradient(90deg, #ff4e50, #f9d423);
+    color: #fafbfc;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 30px;
+    background-image: url("https://th.bing.com/th/id/OIP.BntTT0gyxdnofHOt2H4x6wHaFj?rs=1&pid=ImgDetMain");
+    text-transform: uppercase;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+
+header h1 {
+    margin: 0;
+    font-weight: 600; /* Fonte destacada */
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f9d423;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+    border-bottom: 5px solid #e8eae9;
+    padding-bottom: 10px;
+}
+
+section h2 {
+    color: #ff4e50;
+    font-size: 28px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+footer ul li {
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+button, a.button {
+    background-color: #ff4e50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+}
+
+button:hover, a.button:hover {
+    background-color: #f9d423;
+    transform: scale(1.05);
+}
+
+iframe {
+    display: block;
+    margin: 0 auto;
+}
+
+.secondary-page {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #2e2e2e;
+    border: 1px solid #555;
+    box-shadow: 0 0 10px rgba(39, 38, 38, 0.5);
+}
+
+.search-bar {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.search-bar input {
+    padding: 10px;
+    font-size: 16px;
+    width: 100px;
+    border: 1px solid #555;
+    border-radius: 1px;
+}
+
+.search-bar button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #ff4e50;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.search-bar button:hover {
+    background-color: #f9d423;
+}
+
+.logo {
+    font-size: 48px;padding: auto;
+    font-weight: bold;padding: 100%;
+    color: #f9d423;
+    text-shadow: 2px 2px #ff4e50;
+}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playlists</title>
+    <style>
+        #generos ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        #generos ul li {
+            margin-bottom: 5px;
+        }
+        #generos ul li a {
+            display: block;
+            text-decoration: none;
+            padding: 10px;
+            background-color: #f0f0f0;
+            color: #333;
+            border-radius: 5px;
+            width: 200px; /* Define o mesmo tamanho para todos os botões */
+            text-align: left; /* Alinha à esquerda */
+        }
+        #generos ul li a:hover {
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+
+<section id="generos">
+    <h2>Playlists</h2>
+    <ul>
+        <li><a href="https://maistocadas.mus.br/musicas-internacionais/">Rock internacional</a></li>
+        <li><a href="https://maistocadas.mus.br/musicas-romanticas-internacionais/">Romanticas</a></li>
+        <li><a href="https://maistocadas.mus.br/flashback/">Flash back</a></li>
+        <li><a href="https://maistocadas.mus.br/musica-dia-nasceu/">A mais tocada no dia que você nasceu</a></li>
+        <li><a href="https://maistocadas.mus.br/mpb-das-antigas/">As melhores da MPB</a></li>
+        <li><a href="https://maistocadas.mus.br/musicas-mais-tocadas/">Músicas mais tocadas nas rádios</a></li>
+        <li><a href="https://maistocadas.mus.br/paradas-anuais/">As melhores ano a ano</a></li>
+    </ul>
+</section>
+
+</body>
+</html>
+
+
